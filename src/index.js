@@ -33,7 +33,7 @@ function onStartClick() {
   isActive = true;
   refs.startBtn.disabled = true;
   intervalId = setInterval(() => {
-    const currentColor = randomIntegerFromInterval(0, colors.length, -1);
+    const currentColor = randomIntegerFromInterval(0, colors.length - 1);
     refs.body.style.backgroundColor = colors[currentColor];
   }, 1000);
 }
